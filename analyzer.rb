@@ -10,6 +10,8 @@ character_count = text.length
 character_count_nospaces = text.gsub(/\s+/, '').length
 paragraph_count = text.split(/\n\n/).length
 sentence_count = text.split(/\.|\?|!/).length
+sentences = text.gsub(/\s+/, '').strip.split(/\.|\?\!/)
+sentences_sorted = sentences.sort_by { |sententes| sentences.length}
 
 puts "#{line_count} lines"
 puts "#{character_count} characters"
