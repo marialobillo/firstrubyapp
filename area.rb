@@ -1,5 +1,5 @@
 
-clas Shape
+class Shape
 
 end
 
